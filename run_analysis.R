@@ -62,5 +62,5 @@ splitted <- split(data_fullMS2, list(data_fullMS2$activity,
 ncolend <- ncol(data_fullMS2)-3
 data_tidy2 <- t(sapply(splitted, function(x) colMeans(x[, 1:ncolend], na.rm = TRUE)))
 
-write.table(data_tidy2, "Tidy_data2.txt", sep = "\t", row.names = TRUE, col.names = TRUE)
+write.table(data_tidy2, "Tidy_data2.txt", sep = "\t", row.names = FALSE, col.names = TRUE)
 
