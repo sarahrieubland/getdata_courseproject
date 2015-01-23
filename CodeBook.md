@@ -32,10 +32,10 @@ data_downloaded : "Fri Jan 23 21:55:31 2015"
 * Add a new column with the activity name as factor variable.
 
 5. Tidy data set with the average of each variable for each (activity, subject).\s\s
-* Transform the subject variable into a factor.
-* Split the dataset according to the subjets AND the activity (the interaction between the two).
-* Calculate the mean by columns for each interaction (activity.subject)
-* Save the tidy dataset as a txt file.
+- Transform the subject variable into a factor.
+- Split the dataset according to the subjets AND the activity (the interaction between the two).
+- Calculate the mean by columns for each interaction (activity.subject)
+- Save the tidy dataset as a txt file.
 
 
 
