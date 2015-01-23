@@ -11,31 +11,31 @@ data_downloaded : "Fri Jan 23 21:55:31 2015"
 
 ## Transfomations
 
-0. Download and Open files.
+#### 0. Download and Open files.
 * Download and unzip the data.
 * The files are txt files (separator "") with no colomns names.
 
-1. Merge the "train" and "test" datasets.
+#### 1. Merge the "train" and "test" datasets.
 * Add columns to the datasets with the subject and acitivity information
 * Merge the rows of the train and the test datasets with `rbind()` "train" and "test" are different observations
 
-2. Extract only mean() and std() for each measurement.
+#### 2. Extract only mean() and std() for each measurement.
 * Open the list of features file
 * Identify the features containing "mean()" or "std()" using `grepl`
 * Subset the dataset to the variables including "mean()" or "std()"
 
-3. Label variables with appropriate names.
+#### 3. Label variables with appropriate names.
 * Set the column names (variables) with the name of the measurement (from the features list)
 
-4. Add descriptive activity names.
+#### 4. Add descriptive activity names.
 * Open the activity labels file to lookup the name of each activity coded by 1-6.
 * Add a new column with the activity name as factor variable.
 
-5. Tidy data set with the average of each variable for each (activity, subject).\s\s
-- Transform the subject variable into a factor.
-- Split the dataset according to the subjets AND the activity (the interaction between the two).
-- Calculate the mean by columns for each interaction (activity.subject)
-- Save the tidy dataset as a txt file.
+#### 5. Tidy data set with the average of each variable for each (activity, subject).
+* Transform the subject variable into a factor.
+* Split the dataset according to the subjets AND the activity (the interaction between the two).
+* Calculate the mean by columns for each interaction (activity.subject)
+* Save the tidy dataset as a txt file.
 
 
 
