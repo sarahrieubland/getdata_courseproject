@@ -1,10 +1,7 @@
 ## Put comments here that give an overall description of what your
 ## run_analysis.R
 
-
 library(downloader)
-library(dplyr)
-library(stringr)
 
 ## 0. Download files and Open files 
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip" 
